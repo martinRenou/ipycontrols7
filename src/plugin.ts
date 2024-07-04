@@ -7,8 +7,9 @@ import { Widget } from '@lumino/widgets';
 
 import { IJupyterWidgetRegistry } from '@jupyter-widgets/base';
 
-import { JUPYTER_CONTROLS_VERSION } from '@jupyter-widgets/controls/lib/version';
-import * as widgetsExport from '@jupyter-widgets/controls';
+import { JUPYTER_CONTROLS_VERSION } from 'jupyter-controls7/lib/version';
+import * as widgetsExport from 'jupyter-controls7';
+import 'jupyter-controls7/css/widgets.css';
 
 const EXTENSION_ID = 'ipycontrols7:plugin';
 
