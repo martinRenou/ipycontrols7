@@ -33,6 +33,8 @@ function activateWidgetExtension(
   app: Application<Widget>,
   registry: IJupyterWidgetRegistry
 ): void {
+  console.log('registering controls for ipywidgets 8');
+  console.log(JUPYTER_CONTROLS_VERSION, widgetsExport);
   registry.registerWidget({
     name: '@jupyter-widgets/controls',
     version: JUPYTER_CONTROLS_VERSION,
